@@ -12,5 +12,8 @@ const COMISION: &[u8]   = 10/100;
 
 #[elrond_wasm_derive::contrac(USADCoinImpl)]
 pub trait USADCoin  {
-
+    #[view]
+    fn name($self) -> &`static [u8]` {
+        NAME
+    }
 }
