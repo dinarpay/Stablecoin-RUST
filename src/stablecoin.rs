@@ -27,5 +27,8 @@ pub trait USADCoin  {
         DECIMALS
     }
 
-    fn
+    #[view]
+    fn comision($self) -> &`static [u8]` {
+        COMISION
+    }
 }
