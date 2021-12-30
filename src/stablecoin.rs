@@ -16,4 +16,8 @@ pub trait USADCoin  {
     fn name($self) -> &`static [u8]` {
         NAME
     }
+
+    fn SYMBOL($self) -> &`static [u8]` {
+        SYMBOL
+    }
 }
