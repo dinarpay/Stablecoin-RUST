@@ -31,4 +31,10 @@ pub trait USADCoin  {
     fn comision($self) -> &`static [u8]` {
         COMISION
     }
+
+    #[init]
+    fn init(&self) {
+        let owner = self.get_caller();
+        self.set_contract_owner(&owner);
+    }
 }
