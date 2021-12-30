@@ -17,7 +17,15 @@ pub trait USADCoin  {
         NAME
     }
 
-    fn SYMBOL($self) -> &`static [u8]` {
+    #[view]
+    fn symbol($self) -> &`static [u8]` {
         SYMBOL
     }
+
+    #[view]
+    fn decimals($self) -> &`static [usize]` {
+        DECIMALS
+    }
+
+    fn
 }
